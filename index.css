@@ -1,0 +1,213 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  background-image: url('https://cooldigital.photography/wp-content/uploads/2018/02/Ink-in-water-isolated-on-white-background.-Rainbow-of-colors.jpg'); /* Replace 'your-image-url.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+.container:hover
+{
+border-color: #000000;
+border-radius: 13px;
+border-width: 5px;
+
+}
+h3 {
+    color: #0bb8ec;
+    margin-bottom: 60px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+ 
+  top: 0;
+  left: 20%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+
+
+    .input-container {
+      position: relative;
+    }
+
+    input {
+      width: 300px;
+      padding: 10px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    input:focus {
+      border-color: #27ae60;
+    }
+
+    .input-label {
+      position: absolute;
+      top: 50%;
+      background-color: white;
+      left: 25px;
+      transform: translateY(-50%);
+      color: #7f8c8d;
+      pointer-events: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input:focus + .input-label,
+    input:not(:placeholder-shown) + .input-label {
+      top: 0;
+      font-size: 12px;
+      color: #27ae60;
+    }
+
+    .input-border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #19e1f0;
+      transform-origin: bottom right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    input:focus + .input-label + .input-border {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+    }
+
+
+
+
+
+
+#myInput {
+    padding: 12px;
+    margin: 10px;
+    border: 2px solid #e21515;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+
+
+#msg {
+    margin: 15px 0;
+    color: #2d3a3e;
+}
+
+@keyframes mindBlowingAnimation 
+{
+    0% {
+      transform: scale(1);
+      opacity: 0.2;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.2;
+    }
+  }
+  
+  p {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    animation: mindBlowingAnimation 2s;
+  }
+
+@keyframes pulse
+{
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #343fdb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+button:hover {
+  animation: pulse 0.6s ;
+  background: linear-gradient(to right, #eb29b1, #5ab9f7);
+}
+
+
+button 
+{
+
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #e426ca;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d1495b;
+}
